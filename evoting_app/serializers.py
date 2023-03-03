@@ -10,3 +10,9 @@ class VerificationSerializer(serializers.ModelSerializer):
             'voters',
             'timestamp'
         ]
+
+class PartySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Party
+        fields = ['name', 'logo', 'candidate', 'description']
+
