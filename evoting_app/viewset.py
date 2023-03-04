@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from evoting_app.models import Verification, Party, Voter
-from evoting_app.serializers import VerificationSerializer, PartySerializer, VoterSerializer
+from .models import Verification, Party, Voter
+from .serializers import VerificationSerializer, PartySerializer, VoterSerializer
 
 
 # Create your views here.
