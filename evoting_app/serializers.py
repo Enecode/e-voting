@@ -7,7 +7,7 @@ class VerificationSerializer(serializers.ModelSerializer):
         model = Verification
         fields = [
             'status',
-            'voters',
+            'voter',
             'timestamp'
         ]
 
