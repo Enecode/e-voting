@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from .views import VerificationViewSet, PartyViewSet, VoterViewSet
+from .viewset import VerificationViewSet, PartyViewSet, VoterViewSet
 
 app_name = 'evoting_app'
 router = routers.DefaultRouter()
