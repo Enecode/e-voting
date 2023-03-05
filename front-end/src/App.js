@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import axios from "axios";
-
+import VoterVerification from "./VoterVerification";
 function App() {
 
   return (
     <div className="App">
-     <h1>Welcome to react with django</h1>
+     <VoterVerification />
     </div>
   );
 }
