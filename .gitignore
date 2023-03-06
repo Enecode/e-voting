@@ -1,5 +1,6 @@
 db.sqlite3
+identifier.sqlite
 .env
 .idea
 *.pyc
-venv/
+env
