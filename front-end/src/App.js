@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import VoterVerification from "./VoterVerification";
+import Verification from './Component/Verification';
 function App() {
 
   return (
     <div className="App">
-     <VoterVerification />
+     <Verification />
     </div>
   );
 }
