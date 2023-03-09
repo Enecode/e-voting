@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Verification, Party, Voter
-from .serializers import VerificationSerializer, PartySerializer, VoterSerializer
+from .models import Verification, Party, Voter, Result
+from .serializers import VerificationSerializer, PartySerializer, VoterSerializer, ResultSerializer
 from rest_framework import viewsets
 from rest_framework.response import Response
 from django.core.mail import send_mail
@@ -47,3 +47,8 @@ class PartyViewSet(viewsets.ModelViewSet):
 class VoterViewSet(viewsets.ModelViewSet):
     queryset = Voter.objects.all()
     serializer_class = VoterSerializer
+
+
+class ResultViewSet(viewsets.ModelViewSet):
+    queryset = Result.objects.all()
+    serializer_class = ResultSerializer

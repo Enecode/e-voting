@@ -22,3 +22,13 @@ class VoterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Voter
         fields = ['first_name', 'last_name', 'phone_number', 'email']
+
+
+class ResultSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Voter
+        fields = ['total_votes_cast',
+                  'winning_party',
+                  'number_of_vote_casted',
+                  'number_of_vote_for_each_party'
+                  ]
