@@ -15,20 +15,33 @@ class VerificationSerializer(serializers.ModelSerializer):
 class PartySerializer(serializers.ModelSerializer):
     class Meta:
         model = Party
-        fields = ['name', 'logo', 'candidate', 'description']
+        fields = ['name', 'logo', 'description']
 
 
 class VoterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Voter
-        fields = ['first_name', 'last_name', 'phone_number', 'email']
+        fields = ['id', 'first_name', 'last_name', 'phone_number', 'email']
+
+
+class CandidateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Candidate
+        fields = ['name', 'party']
+
+
+class VoteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Vote
+        fields = ['voter', 'party', 'timestamp']
 
 
 class ResultSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Voter
+        model = Result
         fields = ['total_votes_cast',
                   'winning_party',
                   'number_of_vote_casted',
                   'number_of_vote_for_each_party'
                   ]
+

@@ -27,7 +27,7 @@ const Verification = () => {
   };
 
   return (
-    <div>
+    <div className='verification-container'>
       {!token && (
         <form onSubmit={handleSubmit}>
           <label htmlFor="email">Enter your email address:</label>

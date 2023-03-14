@@ -4,3 +4,6 @@ identifier.sqlite
 .idea
 *.pyc
 env
+.evoting_envi
+.votingenv
+
